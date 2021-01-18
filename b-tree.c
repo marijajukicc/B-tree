@@ -1,5 +1,5 @@
 /*b-stablo s brojevima*/
-//ispis stabla te ispis inorder.....
+//ispis stabla te ispis inorder
 //pretrazivanje el unutar stabla,br levela stabla,ispis najveceg i najmanjeg elementa
 
 #define _CRT_SECURE_NO_WARNINGS
