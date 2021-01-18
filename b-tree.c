@@ -7,6 +7,7 @@
 #include <stdlib.h>
 #include <string.h>
 #define MAXDEGREE 3//maksimalno kljuceva po cvoru
+//degree moze biti i 4
 
 typedef struct Node* NodePointer;
 
