@@ -234,7 +234,7 @@ int checkAndInsert(NodePointer root, int key, int* topKey, NodePointer* newNode)
 		lastKey = newKey;
 		lastChild = newPtr;
 	}
-	else { //cvor pun,a novi ne ide na kraj,sve treba maknit u desno ali posto cemo zadnjeg izbacit trebamo ga zapamtit da ga nebi zauvijek izgubili
+	else { //cvor pun,a novi ne ide na kraj,sve treba maknit u desno
 		lastKey = root->keys[MAXDEGREE - 2];
 		lastChild = root->childrenPointer[MAXDEGREE - 1];
 
