@@ -254,7 +254,7 @@ int checkAndInsert(NodePointer root, int key, int* topKey, NodePointer* newNode)
 
 
 NodePointer createSplitNode(NodePointer* newNode, NodePointer root, int lastKey, NodePointer lastChild, int position) {
-	//spremamo ono sto ce sadrzavat novi root cvor
+	//spremamo ono sto ce sadrzavat novi cvor koji ce bit desno dijete od root cvora
 	(*newNode) = Allocation();//Alociram cvor u koji cu spremit sve sto je prije bilo u cvoru prije dolaska novog el i to ce postati desno dijete novog cvora
 	root->saved = position - 1; //br elemenata koji ce biti u lijevom dijetetu novog cvora
 	int s=(*newNode)->saved = MAXDEGREE - position;//br elemenata koji ce bit u desnom dijetetu novog cvora
