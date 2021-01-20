@@ -375,10 +375,10 @@ int searchEl(NodePointer b, int el) {
 				printf("There is element %d inside of the tree\n", el);
 				return el;
 			}
-		for (i = 0; i <= b->saved; i++) {
-			searchEl(b->childrenPointer[i], el);
-		}
-		return el;
+	pos = searchPosition(el, b, b->saved);
+	searchEl(b->childrenPointer[pos], el);
+		
+	return el;
 	}
 	return 0;
 }
