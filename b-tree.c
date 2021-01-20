@@ -147,13 +147,9 @@ NodePointer insert(int key, NodePointer root) {
 	//fja za unos
 	NodePointer newNode;
 	int topKey;
-	int flag = checkAndInsert(root, key, &topKey, &newNode);;
-
-	if (flag == -1)
-		puts("Number is already inside of the tree");
-	if (flag == 1) {
+	
+	if (checkAndInsert(root, key, &topKey, &newNode) == 1)
 		root = createRootNode(topKey, root, newNode);
-	}
 
 	return root;
 }
