@@ -51,7 +51,7 @@ int console(NodePointer root) {
 	puts("insert - It inserts the key you want in the tree");
 	puts("print - It prints the entire tree");
 	puts("max - It prints the biggest element of the tree");
-	puts("min - It prints the samllest element of the tree");
+	puts("min - It prints the smallest element of the tree");
 	puts("inorder - It prints numbers inside of the tree in order");
 	puts("search - It enables you to search for a number in the tree");
 	puts("end - It ends the whole program");
